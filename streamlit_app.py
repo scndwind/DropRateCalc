@@ -71,4 +71,3 @@ if st.button("Run Simulation"):
     st.write(f"Attempts: {attempts:,}")
     st.write(f"\nOut of {attempts:,} attempts, you got {successful_drops} successful attempts.")
     st.write(f"Total drops: {total_drops}")
-    st.write(f"Actual chance: {actual_chance:.2f}%")
