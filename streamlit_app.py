@@ -45,16 +45,16 @@ st.title("Drop Rate Simulation")
 
 # Inputs from the user
 drop_rate = st.number_input("Enter Drop Rate (e.g., 11.76)", min_value=0.0, value=11.76)
-character = st.selectbox("Choose your character", ["DK", "VMan", "Any"]).lower()
+character = st.selectbox("Choose your character", ["Divine Knight", "Void Walker", "Other"]).lower()
 
 orb_count = 0
 gimme_chance = 0
 if character == "dk":
-    orb_count = st.number_input("Enter Orb Count (0 if not using Divine Knight)", min_value=0, value=0)
+    orb_count = st.number_input("Orb Count", min_value=0, value=0)
 elif character == "vman":
-    gimme_chance = st.number_input("Enter Gimme-Gimme Chance %", min_value=0.0, max_value=100.0, value=56.0)
+    gimme_chance = st.number_input("Gimme-Gimme Chance %", min_value=0.0, max_value=100.0, value=56.0)
 
-drop_chance = st.number_input("Enter Drop Chance (e.g., 2000000 for 1/2000000)", min_value=1, value=2000000)
+drop_chance = st.number_input("Drop Chance (e.g., 2000000 for 1/2000000)", min_value=1, value=2000000)
 attempts = st.number_input("Enter Number of Attempts", min_value=1, value=100)
 
 # Button to run the simulation
